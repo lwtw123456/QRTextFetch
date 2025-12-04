@@ -38,7 +38,7 @@
 g++ main.cpp qrcodegen.cpp lodepng.cpp -o QRTextFetch.exe -std=gnu++17 -static -static-libgcc -static-libstdc++ -municode -mwindows
 ```
 
-编译完成后，将得到一个单文件可执行程序：`qrcode.exe`，可直接在目标 Windows 机器上运行。
+编译完成后，将得到一个单文件可执行程序：`QRTextFetch.exe`，可直接在目标 Windows 机器上运行。
 
 ### 编译参数说明
 
