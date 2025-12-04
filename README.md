@@ -16,7 +16,7 @@
 ## 功能特性
 
 - 🧱 **适配老环境**：支持 **Windows 7 及以上** 系统
-- 📦 **零运行时依赖**：静态链接，生成单一 `qrcode.exe` 可执行文件，拷贝即可使用
+- 📦 **零运行时依赖**：静态链接，生成单一 `QRTextFetch.exe` 可执行文件，拷贝即可使用
 - 🌐 **无需联网**：二维码生成在本地完成，适用于内网/物理隔离环境
 - 📝 **专注文本中转**：面向配置、命令、验证码、URL、短文本等场景
 - ⚙️ **自动配置参数**：根据输入文本长度，自动选择合适的版本和纠错等级，在保证可识别性的同时尽量减小体积
@@ -36,7 +36,7 @@
 
 ```bash
 g++ main.cpp qrcodegen.cpp lodepng.cpp \
-  -o qrcode.exe \
+  -o QRTextFetch.exe \
   -std=gnu++17 \
   -static -static-libgcc -static-libstdc++ \
   -municode -mwindows
@@ -55,7 +55,7 @@ g++ main.cpp qrcodegen.cpp lodepng.cpp \
 
 以下为典型的内外网中转场景示例，可根据实际界面与交互细节进行调整：
 
-1. **在内网电脑上运行 `qrcode.exe`**
+1. **在内网电脑上运行 `QRTextFetch.exe`**
    - 打开程序后，会看到文本输入区域与二维码展示区域。
 
 2. **在内网中粘贴/输入要带出的文本**
