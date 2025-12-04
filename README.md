@@ -35,11 +35,7 @@
 推荐使用 MinGW-w64 或类似环境，使用 C++17 标准与静态链接：
 
 ```bash
-g++ main.cpp qrcodegen.cpp lodepng.cpp \
-  -o QRTextFetch.exe \
-  -std=gnu++17 \
-  -static -static-libgcc -static-libstdc++ \
-  -municode -mwindows
+g++ main.cpp qrcodegen.cpp lodepng.cpp -o QRTextFetch.exe -std=gnu++17 -static -static-libgcc -static-libstdc++ -municode -mwindows
 ```
 
 编译完成后，将得到一个单文件可执行程序：`qrcode.exe`，可直接在目标 Windows 机器上运行。
